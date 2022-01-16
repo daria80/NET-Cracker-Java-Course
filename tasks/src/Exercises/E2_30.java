@@ -1,13 +1,12 @@
-package ArrayVector;
+package Exercises;
 
 import java.util.Scanner;
 
-public class Test {
+public class E2_30 {
     public static Scanner in = new Scanner(System.in);
 
     public static void main(String[] args) {
-        double a, b;
-        double c, d, e, f, g, h, k, l;
+        double a ,b ,c ,d ,e ,f ,g ,h ,k ,l;
         System.out.println("Введите часы");
         a = in.nextDouble();
         System.out.println("Введите минуты");
@@ -23,5 +22,3 @@ public class Test {
         System.out.println("До полуночи осталось часов: " + h + "; минут: " + l + ";");
     }
 }
-
-
