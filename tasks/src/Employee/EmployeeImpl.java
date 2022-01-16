@@ -69,26 +69,26 @@ public class EmployeeImpl implements Employee {
         this.manager = manager;
     }
 
-//    @Override
-//    public boolean equals(Object o) {
-//        if (this == o) return true;
-//        if (o == null || getClass() != o.getClass()) return false;
-//        EmployeeImpl employee = (EmployeeImpl) o;
-//        return salary == employee.salary && Objects.equals(firstName, employee.firstName) && Objects.equals(lastName, employee.lastName) && Objects.equals(manager, employee.manager);
-//    }
-//
-//    @Override
-//    public int hashCode() {
-//        return Objects.hash(salary, firstName, lastName, manager);
-//    }
-//
-//    @Override
-//    public String toString() {
-//        return "EmployeeImpl{" +
-//                "salary=" + salary +
-//                ", firstName='" + firstName + '\'' +
-//                ", lastName='" + lastName + '\'' +
-//                ", manager=" + manager +
-//                '}';
-//    }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        EmployeeImpl employee = (EmployeeImpl) o;
+        return salary == employee.salary && Objects.equals(firstName, employee.firstName) && Objects.equals(lastName, employee.lastName) && Objects.equals(manager, employee.manager);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(salary, firstName, lastName, manager);
+    }
+
+    @Override
+    public String toString() {
+        return "EmployeeImpl{" +
+                "salary=" + salary +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", manager=" + manager +
+                '}';
+    }
 }
